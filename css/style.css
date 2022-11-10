@@ -224,11 +224,10 @@ body {
   height: 50rem;
   -moz-perspective: 150rem; }
   .card__side {
-    background-color: orangered;
     color: white;
     font-size: 2rem;
     height: 50rem;
-    transition: all 8s ease;
+    transition: all 0.8s ease;
     position: absolute;
     top: 0;
     left: 0;
