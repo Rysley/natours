@@ -11,3 +11,11 @@ $color-white: rgb(247, 242, 242);
 $grid-width: 114rem;
 $gutter-vertical: 3rem;
 $gutter-horizontal: 6rem;
+
+//FONT
+$font-default-size: 1.6rem;
+
+//SHADOW
+$shadow-small: 0 0.5rem 1rem rgba($color-black, 0.15);
+$shadow-medium: 0 1rem 2rem rgba($color-black, 0.15);
+$shadow-large: 0 1.5rem 4rem rgba($color-black, 0.4);
