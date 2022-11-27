@@ -22,11 +22,27 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all 0.3s 0.2s;
+
+    @include respond(tab-land) {
+      width: 90%;
+    }
+
+    @include respond(tab-port) {
+      width: 90%;
+    }
   }
 
   &__left {
     width: 33.333333333%;
     display: table-cell;
+
+    @include respond(tab-land) {
+      background-size: cover;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__right {
@@ -36,9 +52,38 @@
     padding: 3rem 5rem;
   }
 
+  &__shape {
+    display: none;
+
+    @include respond(phone) {
+      display: inline-block;
+      margin: 0rem;
+    }
+  }
+
   &__img {
     display: block;
     width: 100%;
+    height: 30rem;
+    background-size: cover;
+    background-position: 47% 50%;
+
+    &-top {
+      background-image: url(../img/nat-8.jpg);
+
+      @include respond(tab-land) {
+        display: none;
+      }
+    }
+
+    &-bottom {
+      background-image: url(../img/nat-9.jpg);
+      background-position: 50% 50%;
+
+      @include respond(tab-land) {
+        height: 80rem;
+      }
+    }
   }
 
   &__text {
@@ -51,6 +96,11 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(tab-land) {
+      column-count: 1;
+      margin-bottom: 3rem;
+    }
   }
 
   &:target {

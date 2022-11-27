@@ -428,8 +428,8 @@
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
-          <img src="img/nat-8.jpg" alt="tour photo" class="popup__img" />
-          <img src="img/nat-9.jpg" alt="tour photo" class="popup__img" />
+          <div class="popup__img popup__img-top"></div>
+          <div class="popup__img popup__img-bottom"></div>
         </div>
         <div class="popup__right">
           <a href="#section-tours" class="popup__close">&times;</a>
@@ -439,16 +439,26 @@
           <h3 class="heading-tertiary u-margin-bottom-small">
             Important &ndash; Please read these terms before booking
           </h3>
-          <p class="popup__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            minus libero, animi, nisi ducimus mollitia dolorem error reiciendis,
-            aspernatur repudiandae nam. Fuga minima asperiores nostrum
-            temporibus molestiae officia impedit itaque. Lorem ipsum, dolor sit
-            amet consectetur adipisicing elit. Quas totam iste, optio doloribus
-            aperiam nihil officiis numquam cupiditate inventore omnis quae
-            ratione soluta commodi maiores laborum culpa facere. Iste, harum.
-          </p>
-
+          <div class="popup__text">
+            <figure class="popup__shape story__shape">
+              <img
+                src="./img/nat-8.jpg"
+                alt="oerson on a tour"
+                class="story__image"
+                s
+              />
+            </figure>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              minus libero, animi, nisi ducimus mollitia dolorem error
+              reiciendis, aspernatur repudiandae nam. Fuga minima asperiores
+              nostrum temporibus molestiae officia impedit itaque. Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Quas totam iste,
+              optio doloribus aperiam nihil officiis numquam cupiditate
+              inventore omnis quae ratione soluta commodi maiores laborum culpa
+              facere. Iste, harum.
+            </p>
+          </div>
           <a href="#popup" class="btn btn--green">Book now</a>
         </div>
       </div>
