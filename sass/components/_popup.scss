@@ -18,7 +18,6 @@
     box-shadow: $shadow-small;
     border-radius: 3px;
     display: table;
-    overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all 0.3s 0.2s;
@@ -67,6 +66,7 @@
     height: 30rem;
     background-size: cover;
     background-position: 47% 50%;
+    transform: translateX(0.3rem);
 
     &-top {
       background-image: url(../img/nat-8.jpg);
@@ -81,7 +81,7 @@
       background-position: 50% 50%;
 
       @include respond(tab-land) {
-        height: 80rem;
+        height: 60rem;
       }
     }
   }

@@ -595,7 +595,6 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     border-radius: 3px;
     display: table;
-    overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all 0.3s 0.2s; }
@@ -630,7 +629,8 @@ body {
     width: 100%;
     height: 30rem;
     background-size: cover;
-    background-position: 47% 50%; }
+    background-position: 47% 50%;
+    transform: translateX(0.3rem); }
     .popup__img-top {
       background-image: url(../img/nat-8.jpg); }
       @media (max-width: 75em) {
@@ -641,7 +641,7 @@ body {
       background-position: 50% 50%; }
       @media (max-width: 75em) {
         .popup__img-bottom {
-          height: 80rem; } }
+          height: 60rem; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 2rem;
